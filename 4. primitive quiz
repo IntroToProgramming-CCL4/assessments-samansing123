@@ -1,0 +1,22 @@
+#dictionaries for every nation and its capital
+countries_quiz = {
+"France" : "Paris",
+"Germany" : "Berlin",
+"Netherlands" : "Amsterdam",
+"Italy" : "Rome",
+"Spain" : "Madrid",
+"Portugal" : "Lisbon",
+"United Kingdom" : "London",
+"Poland" : "Warsaw",
+"Finland" : "Helsinki",
+"Sweden" : "Stockholm"
+}
+#It repeats for every nation and capital in the dictionary. for country,capital in countries_quiz.items():
+#find out the user's capital country given.
+quiz_answer = input(f"What is the capital of {country}? ") 
+if quiz_answer == capital:
+#If the response is accurate, it will print correctly.
+print("Correct Answer !")
+else:
+# If not, it will print incorrectly and provide the actual response.
+print("Wrong! the correct answer is" ,capital,".")
