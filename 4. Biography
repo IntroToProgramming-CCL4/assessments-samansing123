@@ -1,0 +1,24 @@
+first_name = input("Enter your first name:") #Find out what the user's first name is.
+last_name = input("Enter your last name: ") #Find out what the user's last name.
+hometown = input("Enter your hometown: ") #Find out what the user's hometown.
+age = input("Enter your age: ") #Find out what the user's age.
+#check if the users input in age is a number.
+while not age.isdigit():
+  print("Please enter a valid number for age. ")
+age = input ("Enter your age: ")
+age = int(age) #turn strings into integers.
+#maintains user data in a dictionary.
+persons_information = {
+ "First Name": first_name,
+ "Last Name" : last_name,
+ "Hometown"  : hometown,
+ "Age" : age
+}
+#prints out the user's details.
+print(f"Name:
+{persons_information['First name']}")
+{persons_information['Last Name']}")
+print(f"Hometown:
+{persons_information['Hometown']}")
+print(f"Age:
+{persons_information['Age']}")
