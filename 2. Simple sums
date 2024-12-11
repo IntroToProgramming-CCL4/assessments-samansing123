@@ -1,0 +1,5 @@
+x = 8 #value variable (x)
+y = 10 #value variable (y)
+
+#print the total of the values for x and y. 
+print (f"The sum of {x} and {y} is equals to {x+y}")
