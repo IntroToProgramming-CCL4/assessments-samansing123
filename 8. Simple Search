@@ -1,0 +1,6 @@
+names = ["Jake" , "Zac" , "Ian" , "Ron" , "Sam" , "Dave"] #initializing the list
+user_input =  input("Enter name you want to find: ") #taking user input for the name
+if user_input in names: #using 'in' operator to check 'if' the user input is present in the list 
+    print(f"{user_input} is in the list") #if the user input is in the list then display that given name is in the list 
+else:
+    print("Given name not registered.") #else display its not in the list 
