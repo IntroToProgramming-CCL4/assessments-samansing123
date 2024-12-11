@@ -1,0 +1,17 @@
+allowed_entries = 5  #allowable number of entries
+entries = 0  # Starting point of iterations
+correct_password = 12345  # The correct password
+
+while entries < allowed_entries:  # While allowed entries are greater than the attempted entries
+    password_entry = int(input("Enter your password: "))  # Taking user input
+    
+    if password_entry == correct_password:  # If the user entry matches the correct entry
+        print("Entered password is correct")
+        break  # Breaking the while loop if user entry is correct
+    else:
+        entries += 1  # Increment the entries if the password is incorrect
+        remaining_entries = allowed_entries - entries  # Calculating remaining attempts
+        print(f"Invalid password! You have {remaining_entries} attempts left")  # Inform the user of remaining attempts
+
+if entries == allowed_entries:  # If user attempts reach the maximum amount of allowed entries
+    print("Maximum attempts reached. Authorities have been alerted!")  # Informing the user that maximum attempts are reached
